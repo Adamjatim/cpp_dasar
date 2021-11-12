@@ -1,8 +1,8 @@
 #include <iostream>
 int main(void) {
-    int input, panjang, lebar, luas, r, tinggi, alas;
+    int input, panjang, lebar, luas, r, tinggi, alas, i = 0;
     float phi = 3.14;
-    while (true)
+    while (i < 1)
     {
         std::cout << "Program Penghitung luas" << std::endl;
         std::cout << "1. luas persegi panjang" << std::endl;
@@ -37,7 +37,7 @@ int main(void) {
             std::cout << "input alas : ";
             std::cin >> alas;
             luas = 0.5 * tinggi * alas;
-            std::cout << "luas lingkaran : " << luas;
+            std::cout << "luas segitiga : " << luas;
             std::cout << std::endl << std::endl;
         }
 

@@ -2,34 +2,72 @@
 #include <cstdlib>
 #include <string.h>
 
-using namespace std;
+int opsi; // global variabel
 
-void menu()
+class manipulasi_array
 {
-    int opsi;
-    cout << "\n";
-    cout << "1. menambahkan array\n";
-    cout << "2. mengganti array pada baris tertentu\n";
-    cout << "3. menghapus array pada baris tertentu\n";
-    cout << "PILIH OPSI 1 - 4 : ";
-    cin >> opsi;
+private:
+    /* data */
+public:
+    manipulasi_array(/* args */);
+    ~manipulasi_array();
+};
 
-    if ( opsi == 1 ) {
-
-    }
+manipulasi_array::manipulasi_array(/* args */)
+{
 }
 
-void tambah_arr()
+manipulasi_array::~manipulasi_array()
 {
-    int pjg_arr;
-    cout << "masukkan panjang array : ";
-    cin >> pjg_arr;
 }
 
 int main() 
-{
-    
-    cout << "PROGRAM MANIPULASI ARRAY\n";
-    menu();
+{    
+    while (true) // looping
+    {
+        // menu
+        std::cout << "###########################################\n";
+        std::cout << "#        PROGRAM MANIPULASI ARRAY         #\n";
+        std::cout << "# 1. menambahkan array                    #\n";
+        std::cout << "# 2. mengganti array pada baris tertentu  #\n";
+        std::cout << "# 3. menghapus array pada baris tertentu  #\n";
+        std::cout << "###########################################\n";
+        std::cout << "PILIH OPSI 1 - 4 : ";
+        std::cin >> opsi;
+        system("clear");
+        // opsi (1)
+        if (opsi == 1){ 
+            std::cout << "#######################################\n";
+            std::cout << "# 1. Integer / Bilangan bulat         #\n";
+            std::cout << "# 2. Float / Bilangan koma            #\n";
+            std::cout << "# 3. charcter / karakter              #\n";
+            std::cout << "#######################################\n";
+            std::cout << "Tipe Array yang ingin di inputkan : ";
+            std::cin >> opsi;
+            std::cout << opsi;
+            system("clear");
+            // opsi (1.1)
+            if (opsi == 1){
+                std::cout << "input panjang array : ";
+            }
+            // opsi (1.2)
+            else if (opsi == 2)
+            {
+                
+            }
+            // opsi (1.3)
+            else if (opsi == 3){
+                
+            }
+        }
+        // opsi (2)
+        else if (opsi == 2){ 
+            
+        }
+        // opsi (3)
+        else if (opsi == 3){
+            
+        } 
+    }
     return 0;
 }

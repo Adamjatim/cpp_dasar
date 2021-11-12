@@ -93,7 +93,7 @@ int main()
         cout<<"\n\n\t4.Delete student record";
         cout<<"\n\n\t5.Modify student record";
         cout<<"\n\n\t6.Exit";
-        cout<<"\n\n\What is your Choice (1/2/3/4/5/6) ";
+        cout<<"\n\n\tWhat is your Choice (1/2/3/4/5/6) ";
         cin>>ch;
         system("cls");
         switch(ch)
@@ -206,7 +206,7 @@ void change_student(int n)
             found=true;
         }
     }
-    File.close();
+    std::File.close();
     if(found==false)
     cout<<"\n\n Record Not Found ";
     cin.ignore();
