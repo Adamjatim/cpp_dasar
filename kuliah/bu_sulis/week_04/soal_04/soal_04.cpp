@@ -9,7 +9,7 @@ int main(void){
     int harga_kemeja, diskon, harga_total, harga_diskon;
     harga_kemeja = 180000;
     diskon = 15;
-    std:::cout << "Program Penhitung harga diskon kemeja" << std::endl;
+    std::cout << "Program Penhitung harga diskon kemeja" << std::endl;
     std::cout << "Harga kemeja : Rp. " << harga_kemeja << std::endl;
     std::cout << "Diskon sebesar : " << diskon << "%" << std::endl;
     // rumus untuk melakukan proses diskon
